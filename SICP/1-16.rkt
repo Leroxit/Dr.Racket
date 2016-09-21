@@ -1,0 +1,10 @@
+#lang sicp
+(define (square x)
+  (* x x))
+
+(define (exp-iter b n)
+  (define (iter b n a)
+  (cond ((= n 0) a)
+        ((= (remainder n 2) 0) (iter (square b) (/ n 2) a))
+        (else (iter b (- n 1) (* a b)))))
+  (iter b n 1))
