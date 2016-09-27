@@ -56,7 +56,7 @@
 
 
 
-;Prime Test Nested implementation. Also can use (even test from above, to optimise)
+;Prime Test Nested implementation. Also can use "even test" from above, to optimise.
 (define (ptn n c)
 (define (nstart-prime-test n start-time)
   (if (prime? n)
