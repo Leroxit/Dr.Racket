@@ -68,6 +68,6 @@
   (display elapsed-time)
   (newline)
   (ptn (+ n 1) (- c 1)))
-(if (or (< n 1) (< c 1))
-  (display "Done") ;terminating case of recursion
+(if (or (< n 1) (< c 1)) ;terminating case of recursion
+  (display "Done") 
   (nstart-prime-test n (runtime))))
