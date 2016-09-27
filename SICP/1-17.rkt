@@ -3,6 +3,8 @@
   (* x 2))
 (define (halve x)
   (/ x 2))
+ 
+;a * b = 2 * (a * b/2) if b is even
 (define (mult x y)
   (cond ((= y 0) 0)
         ((= y 1) x)
