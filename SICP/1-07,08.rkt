@@ -10,7 +10,8 @@
         guess
         (try (improve guess))))
   (try 1.0))
-
+  
+;Nested implementation
 (define (sqrt2 x)
   (define (try guess oldguess)
     (if (good? guess oldguess)
@@ -23,6 +24,7 @@
     (<= (abs (- a b)) (* a 0.001)))
 (try 1.0 x))
 
+;Cube root
 (define (sqrt3 x)
   (define (try g og)
     (if (good? g og)
