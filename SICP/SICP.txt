@@ -1,4 +1,7 @@
-My solutions to SICP practical exercises. If yo want another solutions, try to visit:
+My solutions to SICP practical exercises. 
+The first exercises was made without too many explanations, cause SICP wrote about them explicitly. Math related material mostly will not be explained, cause some proves will be bigger then the code, but if you interested in them - i will try to leave some material, if its not complex.
+
+If yo want another solutions, try to visit:
 
 http://community.schemewiki.org/?SICP-Solutions
 http://www.billthelizard.com/2010/01/sicp-exercise-121-smallest-divisor.html
