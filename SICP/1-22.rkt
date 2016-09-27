@@ -42,7 +42,7 @@
 ;Search in specified range, also with new feature:
 ;Here is implementation of optimisation for cylces. Even number (except 0, 2) cannot be prime, so we can skip then.
 ;Due to "even number optimisation" - fails when start from 0,1(skips 2),2.
-;Moved test for 0,1,2 and even numbers from the main-worker (spfi), and it will test only once.
+;I have moved test for 0,1,2 and even numbers from the main-worker (spfi), and it will test only once.
 (define (search-for-primesR start end)
 (define (sfpi s)
   (cond ((< s end) (timed-prime-test s) (sfpi (+ s 2)))))
