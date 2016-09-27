@@ -1,5 +1,6 @@
 #lang sicp
 
+;Nested implementation
 (define (sqrtt x)
   (define (improve guess)
      (/ (+ guess (/ x guess)) 2))
@@ -11,7 +12,7 @@
         (try (improve guess))))
   (try 1.0))
   
-;Nested implementation
+;Different approach to testing
 (define (sqrt2 x)
   (define (try guess oldguess)
     (if (good? guess oldguess)
