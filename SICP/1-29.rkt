@@ -10,7 +10,7 @@
          (sum term (next a) next b))))
 
 (define (simpson f a b n)
-  (define h (/ (- b a) n))              ;defining some values separetly, to decompose problem in smaller parts
+  (define h (/ (- b a) n))              ;defining some values separately, to decompose problem in smaller parts
   (define (y k) (f (+ a (* k h))))          
   (define (term k)                      ;"term" gets "k" from "sum" procedure, where a i changing by +1 with each step until a=n
     (* (y k) (cond ((or (= k 0) (= k n)) 1)
