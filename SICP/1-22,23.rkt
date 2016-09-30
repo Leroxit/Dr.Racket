@@ -30,7 +30,7 @@
   (display elapsed-time)
   (newline))
 
-;Straight forward solution wich is doing extra work: (prime?) used twice in each cycle. Here you are selecting "how many prime numbers" you want to find beginning from number
+;Straight forward solution which is doing extra work: (prime?) used twice in each cycle. Here you are selecting "how many prime numbers" you want to find beginning from number
 (define (search-for-primes n c)
   (if (> c 0)
       (if (prime? n)
