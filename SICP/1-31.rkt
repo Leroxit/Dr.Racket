@@ -25,4 +25,4 @@
     (if (even? x) (- x 1) x))
   (* 4 (/ (product-it top 3 inc a)
           (product-it bot 3 inc a))))
-;If Racket show rational number to you, use this command: (exact->inexact <procedure>)
+;If Racket shows rational number to you, use this command: (exact->inexact <procedure>)
