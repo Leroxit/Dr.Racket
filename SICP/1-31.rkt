@@ -25,4 +25,13 @@
     (if (even? x) (- x 1) x))
   (* 4 (/ (product-it top 3 inc a)
           (product-it bot 3 inc a))))
-;If Racket shows rational number to you, use this command: (exact->inexact <procedure>)
+;If Racket shows rational number to you, use this command: (exact->inexact <procedure>) or swap number 4 with 4.0
+
+;Next, i will use something, that's not described in SICP. Its called "Wallis product", which is expression of this product in math. language.
+;Lets translate it to Scheme. 
+(define (wal n)
+  (define (square x) (* x x))
+  (define (term x)
+      (/ (* 4.0 (square x))
+         (- (* 4.0 (square x)) 1)))
+  (* 2.0 (product term 1 inc n)))
