@@ -19,7 +19,7 @@
   (product-it identity 1 inc x))
 
 (define (pi a)
-  (define (top x)               ;Using this procedures for this formula's sequences. For numerators (2,4,4,6,6..) if counter is not even -> (-1)
+  (define (top x)               ;Using this procedures for these formula's sequences. For numerators (2,4,4,6,6..) if counter is not even -> (-1)
     (if (even? x) x (- x 1)))   ;For denominator: If counter is even -> (-1).  (Example for numerator: 3->2, 4->4, 5->4, 6->6, 7->6...)
   (define (bot  x)
     (if (even? x) (- x 1) x))
