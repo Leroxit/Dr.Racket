@@ -4,3 +4,5 @@
       (list null)
       (let ((rest (subsets (cdr s))))
         (append rest (map (lambda (x) (cons (car s) x)) rest)))))
+        
+;https://en.wikipedia.org/wiki/Power_set#Algorithms
