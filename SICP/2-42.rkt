@@ -1,6 +1,4 @@
 #lang racket
-(require math/number-theory)
-
 (define (accumulate op initial sequence)
   (if (null? sequence)
       initial
