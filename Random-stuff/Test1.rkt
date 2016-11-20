@@ -1,5 +1,6 @@
 #lang sicp
 ;S = 1 + 1/2! + 1/3! + ... + 1/n!
+
 (define (sum n)
   (define (fac x)
   (if (= x 1) 1
