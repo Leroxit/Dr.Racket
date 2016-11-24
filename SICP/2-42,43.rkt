@@ -52,3 +52,5 @@
                  (enumerate-interval 1 board-size)))
           (queen-cols (- k 1))))))
   (queen-cols board-size))
+
+;2-43: queen-cols will evaluate for every item in (enumerate-interval 1 board-size), T2=T1^k
