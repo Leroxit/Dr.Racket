@@ -3,8 +3,7 @@
   (if (null? sequence)
       initial
       (op (car sequence)
-          (accumulate op initial (cdr sequence)))))
-          
+          (accumulate op initial (cdr sequence)))))        
 (define (enumerate-interval low high)
   (if (> low high)
       null
@@ -19,7 +18,6 @@
    (car position))
 (define (position-col position)
    (cdr position))
-
 (define (adjoin-position row col positions)
    (append positions (list (make-position row col))))  
 
@@ -32,7 +30,7 @@
      (or (= (position-row q1) (position-row q2))
          (= (abs (- (position-row q1) (position-row q2)))
             (abs (- (position-col q1) (position-col q2))))))
-
+            
    (define (iter q board)
      (or (null? board)
          (and (not (attacks? q (car board)))
