@@ -54,6 +54,3 @@
 (define diamond (segments->painter diamond-seg))
 (define Xpic (segments->painter Xseg))
 (define outline (segments->painter outline-segments))
-
-
-        
