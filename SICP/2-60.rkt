@@ -6,7 +6,9 @@
 
 (define (adjoin-set x set)
   (cons x set))
-
+(define (union-set set1 set2)
+  (append set1 set2))
+  
  (define (remove-set-element x set) 
    (define (remove-set-element-iter acc rest) 
      (cond ((null? rest) acc) 
@@ -20,6 +22,3 @@
          (cons (car set1)
                (intersection-set (cdr set1) (remove-set-element (car set1) set2))))
         (else (intersection-set (cdr set1) set2))))
-
-(define (union-set set1 set2)
-  (append set1 set2))
