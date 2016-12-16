@@ -1,6 +1,5 @@
 #lang sicp
 (define (square x) (* x x))
-
 (define (cubic a b c)
   (lambda (x)
     (+ (* x x x)
@@ -10,7 +9,6 @@
 
 (define (double f)
   (lambda (x) (f (f x))))
-
 (define (compose a b)
   (lambda (x) (a (b x))))
 
