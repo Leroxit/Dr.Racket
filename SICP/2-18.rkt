@@ -5,4 +5,3 @@
         res
         (iter (+ n 1) (cons (list-ref items n) res))))
   (iter 0 (list)))
-    
