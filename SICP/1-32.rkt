@@ -1,4 +1,7 @@
 #lang sicp
+(define (inc x) (+ x 1))
+(define (identity x) x)
+
 (define (product term a next b)
   (if (> a b)
       1
@@ -11,9 +14,6 @@
         result
         (iter (next a) (* result (term a)))))
   (iter a 1))
-
-(define (inc x) (+ x 1))
-(define (identity x) x)
 
 (define (accumulate combiner null-value term a next b)
   (if (> a b)
