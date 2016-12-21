@@ -7,7 +7,6 @@
 
 (define (numer x) (car x)) 
 (define (denom x) (cdr x))
-
 (define (make-rat n d)
   (let ((g (gcd n d)))
     (if (< d 0)
