@@ -13,9 +13,7 @@
 
 (define (count-leaves1 t)
   (accumulate + 0 (map (lambda (x) 1) (enumerate-tree t))))
-
 (define (count-leaves2 t)
   (accumulate (lambda (x y) (+ 1 y)) 0 (enumerate-tree t)))
-
 (define (count-leaves3 t)
   (accumulate + 0 (map (lambda (x) (if (pair? x) (count-leaves3 x) 1)) t)))
