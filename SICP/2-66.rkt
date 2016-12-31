@@ -35,6 +35,7 @@
         ((> given-key (key (entry set)))
          (lookup given-key (right-branch set)))))
 
+;for test
 (define database
   (list (make-record 1 'One)
         (make-record 2 'Two)
