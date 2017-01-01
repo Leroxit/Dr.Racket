@@ -48,7 +48,8 @@
                (intersection-set (cdr set1) set2))
               ((< x2 x1)
                (intersection-set set1 (cdr set2)))))))
-
+               
+;Make one list from two, then transform back to tree
 (define (union-tree tree1 tree2)
   (list->tree (union-set (tree->list tree1) (tree->list tree2))))
 (define (itersection-tree tree1 tree2)
