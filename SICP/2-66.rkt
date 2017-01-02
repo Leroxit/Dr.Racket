@@ -26,7 +26,8 @@
                     (remaining-elts (cdr right-result)))
                 (cons (make-tree this-entry left-tree right-tree)
                       remaining-elts))))))))
-
+                      
+;similar to elemets-of-tree procedure, with "key" selector
 (define (lookup given-key set)
   (cond ((null? set) false)
         ((= given-key (key (entry set))) (entry set))
