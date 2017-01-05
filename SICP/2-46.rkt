@@ -10,10 +10,12 @@
    (make-vect
      (+ (xcor-vect u) (xcor-vect v))
      (+ (ycor-vect u) (ycor-vect v))))
+     
 (define (sub-vect u v)
    (make-vect
      (- (xcor-vect u) (xcor-vect v))
      (- (ycor-vect u) (ycor-vect v))))
+     
 (define (scale-vect s v)
    (make-vect
      (* s (xcor-vect v))
