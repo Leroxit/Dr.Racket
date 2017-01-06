@@ -9,4 +9,5 @@
           (direction painter (method smaller smaller))))))
 
 (define right-split (split beside below))
+
 (define up-split (split below beside))
