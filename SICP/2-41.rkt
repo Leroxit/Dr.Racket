@@ -4,6 +4,7 @@
       initial
       (op (car sequence)
           (accumulate op initial (cdr sequence)))))
+          
 (define (enumerate-interval low high)
   (if (> low high)
       null
