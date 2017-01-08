@@ -11,8 +11,5 @@
             (cc (- amount
                    (car coin-values))
                 coin-values)))))
-;no-more? = null?
-;except-first-denomination = cdr
-;first-denomination = car
 
 ;Order does not matter, cause procedure evaluates every sub-list - (cc amount (cdr coin-values))
