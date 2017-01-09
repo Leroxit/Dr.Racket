@@ -1,6 +1,7 @@
 #lang racket
 (define (square-tree tree)
   (tree-map square tree))
+  
 (define (square x) (* x x))
 
 (define (tree-map proc tree)
