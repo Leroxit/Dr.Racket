@@ -5,6 +5,6 @@
       (list (car items))
       (last-pair (cdr items))))
 
-;using inbuilt procderue
+;using inbuilt procedure
 (define (last-pair1 items)
   (list (list-ref items (- (length items) 1))))
