@@ -6,5 +6,6 @@
         (+ (pas (- x 1) y)           ;Add two numbers, which are higher (x-1), one is same y-coordinate, and the other is previous (y-1)    
            (pas (- x 1) (- y 1)))))
   
-  (if (or (< x 1) (< y 1)) 0         ;Check for "less then 1" collumns or rows
-      (pas x y)))
+  (cond ((or (< x 1) (< y 1)) 0)    ;Check for "less then 1" collumns or rows
+        ((< x y) 0)                 
+        (else (pas x y)))) 
