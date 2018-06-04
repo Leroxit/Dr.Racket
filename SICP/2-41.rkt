@@ -9,6 +9,7 @@
   (if (> low high)
       null
       (cons low (enumerate-interval (+ low 1) high))))
+      
 (define (flatmap proc seq)
   (accumulate append null (map proc seq)))
 
