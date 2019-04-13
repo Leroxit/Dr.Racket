@@ -37,3 +37,18 @@
     ;(<= (abs (/ (- a b) b)) 0.001))
     (<= (abs (- a b)) (* a 0.001)))
 (try 1.0 x))
+
+#lang racket
+(define (sqrt x)
+  (define (square y)
+    (* y y))
+  (define (improve guess)
+    (/ (+ guess (/ x guess)) 2))
+  (define (check t) 
+    (< (abs (- 1.0 (/ (square t) x))) 0.000001))
+    (define (sqrt-iter g)
+      (if (check g)
+       g
+      (sqrt-iter (improve g))))
+(sqrt-iter 1.0))
+
